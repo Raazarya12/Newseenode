@@ -9,4 +9,4 @@ fi
 cd /SAFARI-PREMIUM-BOT
 pip3 install -U -r requirements.txt
 echo "Starting SAFARI-PREMIUM-BOT...."
-python3 bot.py
+gunicorn app:app & python3 bot.py
